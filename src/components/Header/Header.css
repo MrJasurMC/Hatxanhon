@@ -1,0 +1,168 @@
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search-bar:focus {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+.search-bar::placeholder {
+  color: #999;
+}
+
+.cart-btn {
+  padding: 0.7rem 1.5rem;
+  background: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.cart-btn:hover {
+  background: #fff;
+  color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+.cart-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-menu ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-bar {
+    width: 150px;
+  }
+
+  .search-bar:focus {
+    width: 180px;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar:focus {
+    width: 100%;
+  }
+
+  .cart-btn {
+    width: 100%;
+  }
+}
