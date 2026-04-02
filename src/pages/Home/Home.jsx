@@ -2,13 +2,40 @@ import React from 'react'
 import "./Home.css"
 
 function Home() {
+  const features = [
+    { icon: '⚡', title: 'Tez Xizmat', description: 'Eng tez va ishonchli xizmatni taqdim etamiz' },
+    { icon: '🎨', title: 'Dizayn', description: 'Zamonaviy va chiroyli dizayn bilan yaratilgan' },
+    { icon: '🔒', title: 'Xavfsizlik', description: 'Sizning ma\'lumotlaringiz to\'liq himoyalangan' },
+    { icon: '🚀', title: 'Innovatsiya', description: 'Eng yangi texnologiyalardan foydalanamiz' },
+    { icon: '👥', title: 'Jamoa', description: 'Tajribali va o\'zboshimcham jamoaga ega' },
+    { icon: '💡', title: 'Yechimlar', description: 'Barcha muammolaringizga to\'la yechimlar' }
+  ]
+
   return (
     <section className='home'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci minima vitae, laboriosam ex nisi explicabo esse provident nulla unde hic repudiandae excepturi quibusdam magnam nesciunt magni ut reiciendis beatae molestiae temporibus tenetur repellendus voluptate. Nostrum ad magnam accusantium. Labore quia necessitatibus quos ex quis officiis! Minus, eos maiores! Numquam fugiat, doloribus illum neque explicabo architecto. Eligendi nemo nostrum dolore eius? Molestias ab nostrum id, asperiores molestiae error, quia animi blanditiis veritatis nulla quaerat expedita. Ea vel aut beatae tempora non in nam, sunt, accusantium veniam dicta quo iste. Incidunt error, quia sed debitis commodi libero quod quas rem dignissimos corporis.
+      <div className='home-hero'>
+        <div className='hero-content'>
+          <h1>Xush kelibsiz</h1>
+          <p>Biz bilan yangi imkoniyatlarni kashf eting</p>
+        </div>
+      </div>
 
-        <br />
-        <br />
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore sit, delectus reprehenderit fugit rem quibusdam quia tenetur voluptatum ullam et assumenda ab exercitationem, odio culpa unde ratione excepturi earum aperiam ea? Nulla nihil tenetur cum. Autem, reprehenderit sed laboriosam sequi ipsum excepturi dolor harum architecto consequuntur, facere corporis facilis.
+      <div className='features-grid'>
+        {features.map((feature, index) => (
+          <div key={index} className='feature-card'>
+            <div className='feature-icon'>{feature.icon}</div>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className='home-info'>
+        <h2>Nima Qilishimiz Mumkin?</h2>
+        <div className='info-section'>
+          <p>Biz sizga eng yaxshi xizmatlarni taqdim etishga tayinlangan. Biziing maqsad - sizning muvaffaqiyatiga yordam berishdir. Har bir loyihadagi biz o'z ijodkorligimiz va bilimimizni to'liq sarflaydi.</p>
+        </div>
+      </div>
     </section>
   )
 }
