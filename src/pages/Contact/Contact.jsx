@@ -4,24 +4,7 @@ import "./Contact.css"
 function Contact() {
   return (
     <section className='contact'>
-        <header className='header'>
-            <h1>Contact Us</h1>
-            <p>We'd love to hear from you. Get in touch with us today!</p>
-            <div className='contact-info'>
-                <div className='info-item'>
-                    <span className='icon'>📧</span>
-                    <p>info@example.com</p>
-                </div>
-                <div className='info-item'>
-                    <span className='icon'>📞</span>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div className='info-item'>
-                    <span className='icon'>📍</span>
-                    <p>123 Main Street, City, Country</p>
-                </div>
-            </div>
-        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ducimus incidunt dolor id magnam praesentium eum, commodi fugiat facere vero ipsam delectus dolore sint tenetur quia eligendi blanditiis soluta quae ullam temporibus autem. Itaque eveniet explicabo eos consectetur odio aliquam.</p>
     </section>
   )
 }
