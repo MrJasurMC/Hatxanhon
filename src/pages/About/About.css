@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.about-mission {
+    padding: 80px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.about-mission .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-mission h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.about-mission p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-values {
+    padding: 80px 20px;
+    background: white;
+}
+
+.about-values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #764ba2;
+    margin-bottom: 50px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.about-team {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    text-align: center;
+}
+
+.about-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.features-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    line-height: 1.8;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.about-contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.about-contact h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.about-contact p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-mission h2,
+    .about-values h2,
+    .about-team h2,
+    .about-contact h2 {
+        font-size: 2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}

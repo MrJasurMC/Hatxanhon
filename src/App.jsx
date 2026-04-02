@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home.jsx"
 import Contact from "./pages/Contact/Contact.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 import Shop from "./pages/Shop/Shop.jsx"
-
+import About from "./pages/About/About.jsx"
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/shop' element={<Shop />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
     </section>
